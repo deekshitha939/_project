@@ -182,6 +182,29 @@
     #t{
         font-size: 1rem;
     }
+        /* Hover overlay */
+.swiper-slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  display:none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.swiper-slide:hover .overlay {
+  opacity: 1;
+}
     .order-btn {
         display:none;
         background-color: #da674e;

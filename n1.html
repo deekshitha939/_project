@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        
+        .contact-card {
+            background-color: #0b1b2b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid white;
+        }
+        
+        .contact-card h2, .contact-card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: white;
+            color: #0b1b2b;
+            border: none;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: orange;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="contact-card">
+        <h2>Contact Us</h2>
+        <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+
+        <button class="btn">Mail Us</button>
+        <button class="btn">Contact Us On Whatsapp</button>
+
+        <h3>Working Days</h3>
+        <p>( Tuesday & Saturday 12pm - 2.30pm )</p>
+        <p>( Monday & Friday 4.00pm )</p>
+        <p>( Wednesday & Thursday 3.30pm )</p>
+
+        <button class="btn">Make A Reservation</button>
+    </div>
+
+</body>
+</html>

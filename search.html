@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Kudil</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+        .faq-container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 5px;
+            background: #fdf6ee;
+        }
+        .search-box input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            outline: none;
+        }
+        .search-box button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .popular-searches {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .popular-searches span {
+            background: #222;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .faq-container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>&#128269;</button>
+        </div>
+        <div class="popular-searches">
+            <p>Popular searches:</p>
+            <span>Featured</span>
+            <span>Trendy</span>
+            <span>Sale</span>
+            <span>New</span>
+        </div>
+    </div>
+</body>
+</html>

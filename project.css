@@ -183,6 +183,7 @@
         font-size: 1rem;
     }
     .order-btn {
+        display:none;
         background-color: #da674e;
         color: white;
         border: none;
@@ -1088,20 +1089,25 @@ flex-basis: 50%;
         padding: 8px 15px;
     }
 }
-/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
     #carousel {
       width: 150px;
       height: 120px;
+      position: relative;
+      margin-top: -2%;
+      top: 1%;
     }
   
     #carousel div {
       width: 150px;
       height: 120px;
+      position: relative;
     }
   
     /* Adjust 3D depth */
-    #carousel div:nth-child(n) { transform: rotateY(calc(40deg * (n - 1))) translateZ(200px); }
+    #carousel div:nth-child(n) { 
+      transform: rotateY(calc(40deg * (n - 1))) translateZ(200px); 
+    }
   }
   
   /* Mobile (max-width: 480px) */
@@ -1109,16 +1115,24 @@ flex-basis: 50%;
     #carousel {
       width: 100px;
       height: 80px;
+      position: relative;
+      top: 3%;
     }
   
     #carousel div {
       width: 100px;
       height: 80px;
+      position: relative;
     }
   
     /* Adjust 3D depth for smaller screens */
-    #carousel div:nth-child(n) { transform: rotateY(calc(40deg * (n - 1))) translateZ(140px); }
+    #carousel div:nth-child(n) { 
+      transform: rotateY(calc(40deg * (n - 1))) translateZ(140px); 
+    }
   }
+  
+  
+  
   
   #carousel div {
     position: absolute;
